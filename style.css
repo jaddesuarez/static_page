@@ -1,0 +1,7 @@
+/* Custom styles for the hero section */
+.hero-bg {
+  background-image: url("https://via.placeholder.com/1600x900"); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
