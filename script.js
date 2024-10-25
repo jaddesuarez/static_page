@@ -48,3 +48,40 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Listen for back/forward navigation
 window.onpopstate = renderContent;
+
+// Add an event listener to the Send Contact Form button
+document.getElementById("sendButton").addEventListener("click", function () {
+  // Retrieve form values
+  console.log("puuuur");
+  var name = document.getElementById("name").value.trim();
+  var email = document.getElementById("email").value.trim();
+  var subject = document.getElementById("subject").value.trim();
+  var message = document.getElementById("message").value.trim();
+
+  // Basic validation
+  if (!name || !email || !subject || !message) {
+    alert("Please fill out all fields.");
+    return;
+  }
+
+  // Validate email format (simple regex)
+  var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailPattern.test(email)) {
+    alert("Please enter a valid email address.");
+    return;
+  }
+
+  // Construct the mailto link
+  var mailtoLink =
+    "mailto:your-email@example.com" +
+    "?subject=" +
+    encodeURIComponent(subject) +
+    "&body=" +
+    encodeURIComponent(
+      "Name: " + name + "\n" + "Email: " + email + "\n\n" + message
+    );
+
+  // Open the default email client with the pre-filled email
+  console.log(mailtoLink);
+  window.location.href = mailtoLink;
+});
