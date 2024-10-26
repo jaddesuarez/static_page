@@ -1,226 +1,350 @@
-<div class="min-h-screen">
+<div>
   <!-- Hero Section-->
-  <section id="hero">
-    <div
-      class="container flex flex-col-reverse md:flex-row item-center px-6 mx-auto mt-10 space-y-0 md:space-y-0"
-    >
-      <!-- left item -->
-      <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
+  <section class="flex relative z-20 items-center overflow-hidden">
+    <div class="container mx-auto px-6 flex relative py-16">
+      <div class="sm:w-2/3 md:w-1/2 lg:w-2/5 flex flex-col relative z-20">
+        <span class="w-20 h-2 bg-gray-800 mb-12"> </span>
         <h1
-          class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left"
+          class="font-bebas-neue uppercase text-5xl sm:text-4xl font-black flex flex-col leading-none text-gray-800"
         >
-          Building Your Dreams Into Reality
+          Building Your
+          <span class="text-5xl sm:text-7xl"> Dreams </span>
         </h1>
-        <p class="max-w-sm text-center text-darkGrayisBlue md:text-left">
+        <p class="text-sm sm:text-base text-gray-700 py-5">
           Professional contracting services for residential and commercial
           projects.
         </p>
-        <div class="flex justify-center md:justify-start">
+        <div class="flex mt-8">
           <a
             href="/contact"
             onclick="navigate(event, '/contact')"
-            class="inline-block bg-amber-600 text-white px-6 py-3 rounded-md font-semibold hover:bg-amber-500"
+            class="py-2 px-4 text-white rounded-lg bg-amber-600 border-2 border-transparent text-lg font-semibold mr-4 hover:bg-amber-400"
           >
-            Get a Free Quote
+            Get free quote
+          </a>
+          <a
+            href="/services"
+            onclick="navigate(event, '/services')"
+            class="py-2 px-4 rounded-lg bg-transparent border-2 border-amber-500 text-amber-500 dark:text-gray-700 hover:bg-amber-500 text-md font-semibold"
+          >
+            Explore services
           </a>
         </div>
       </div>
-      <!-- Images -->
-      <div class="md:w-1/2">
-        <img src="/assets/hero-img.png" alt="left-flex-image-hero-section" />
+      <div class="hidden sm:block sm:w-1/3 lg:w-3/5 relative">
+        <img src="/assets/hero-img.png" class="max-w-xs md:max-w-sm m-auto" />
       </div>
     </div>
   </section>
-  <!-- features section -->
-  <section id="features">
-    <!-- Flex container -->
-    <div
-      class="container flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row"
-    >
-      <!-- What's Different -->
-      <div class="flex flex-col space-y-12 md:w-1/2">
-        <h2 class="max-w-md text-4xl font-bold text-center md:text-left">
-          What's different about /Company Name/ ?
-        </h2>
-        <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-          modi dolores reprehenderit dicta. Praesentium veritatis fugit dolorum
-          fugiat reiciendis earum iusto neque, sapiente ipsa sequi, quae,
-          debitis natus eveniet consequuntur.
+  <!-- Metrics Section -->
+  <section
+    class="bg-gray-50 p-8 min-h-[350px] mx-8 rounded-3xl flex flex-col items-center justify-center font-sans"
+  >
+    <h2 class="text-gray-600 text-3xl font-bold mb-16 text-center">
+      Our Numbers
+    </h2>
+    <div class="grid lg:grid-cols-4 sm:grid-cols-2 gap-6 max-lg:gap-12">
+      <div class="text-center">
+        <h3 class="text-gray-600 text-4xl font-extrabold">
+          5.4<span class="text-amber-600">M+</span>
+        </h3>
+        <p class="text-gray-600 text-base font-bold mt-4">Projects</p>
+        <p class="text-sm text-gray-500 mt-2">
+          Excellence Achieved Through Success
         </p>
       </div>
-
-      <!-- Numbered List -->
-      <div class="flex flex-col space-y-8 md:w-1/2">
-        <!-- List Item 1 -->
-        <div
-          class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
-        >
-          <!-- Heading -->
-          <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
-            <div class="flex items-center space-x-2">
-              <div
-                class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed"
-              >
-                01
-              </div>
-              <h3 class="text-base font-bold md:mb-4 md:hidden">
-                Track company-wide progress
-              </h3>
-            </div>
-          </div>
-
-          <div>
-            <h3 class="hidden mb-4 text-lg font-bold md:block">
-              Track company-wide progress
-            </h3>
-            <p class="text-darkGrayishBlue">
-              See how your day-to-day tasks fit into the wider vision. Go from
-              tracking progress at the milestone level all the way down to the
-              smallest of details. Never lose sight of the bigger picture again.
-            </p>
-          </div>
-        </div>
-
-        <!-- List Item 2 -->
-        <div
-          class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
-        >
-          <!-- Heading -->
-          <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
-            <div class="flex items-center space-x-2">
-              <div
-                class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed"
-              >
-                02
-              </div>
-              <h3 class="text-base font-bold md:mb-4 md:hidden">
-                Advanced built-in reports
-              </h3>
-            </div>
-          </div>
-
-          <div>
-            <h3 class="hidden mb-4 text-lg font-bold md:block">
-              Advanced built-in reports
-            </h3>
-            <p class="text-darkGrayishBlue">
-              Set internal delivery estimates and track progress toward company
-              goals. Our customisable dashboard helps you build out the reports
-              you need to keep key stakeholders informed.
-            </p>
-          </div>
-        </div>
-
-        <!-- List Item 3 -->
-        <div
-          class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
-        >
-          <!-- Heading -->
-          <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
-            <div class="flex items-center space-x-2">
-              <div
-                class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed"
-              >
-                03
-              </div>
-              <h3 class="text-base font-bold md:mb-4 md:hidden">
-                Everything you need in one place
-              </h3>
-            </div>
-          </div>
-
-          <div>
-            <h3 class="hidden mb-4 text-lg font-bold md:block">
-              Everything you need in one place
-            </h3>
-            <p class="text-darkGrayishBlue">
-              Stop jumping from one service to another to communicate, store
-              files, track tasks and share documents. Manage offers an
-              all-in-one team productivity solution.
-            </p>
-          </div>
-        </div>
+      <div class="text-center">
+        <h3 class="text-gray-600 text-4xl font-extrabold">
+          $60<span class="text-amber-600">K</span>
+        </h3>
+        <p class="text-gray-600 text-base font-bold mt-4">Awards</p>
+        <p class="text-sm text-gray-500 mt-2">
+          Our Dedication to Innovation Wins Understanding
+        </p>
       </div>
-    </div>
-  </section>
-  <!-- Terstimonials -->
-  <section id="testimonials">
-    <!-- Container to heading and testm blocks -->
-    <div class="max-w-6xl px-5 mx-auto mt-32 text-center">
-      <!-- Heading -->
-      <h2 class="text-4xl font-bold text-center">What our customers say?</h2>
-      <!-- Testimonials Container -->
-      <div class="flex flex-col mt-24 md:flex-row md:space-x-6">
-        <!-- Testimonial 1 -->
-        <div
-          class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3"
-        >
-          <img src="images/avatar-ali.png" class="w-16 -mt-14" alt="" />
-          <h5 class="text-lg font-bold">Anisha Li</h5>
-          <p class="text-sm text-darkGrayisBlue">
-            “Manage has supercharged our team’s workflow. The ability to
-            maintain visibility on larger milestones at all times keeps everyone
-            motivated.”
-          </p>
-        </div>
-
-        <!-- Testimonial 2 -->
-        <div
-          class="hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:flex md:w-1/3"
-        >
-          <img src="images/avatar-anisha.png" class="w-16 -mt-14" alt="" />
-          <h5 class="text-lg font-bold">Ali Bravo</h5>
-          <p class="text-sm text-darkGrayisBlue">
-            “We have been able to cancel so many other subscriptions since using
-            Manage. There is no more cross-channel confusion and everyone is
-            much more focused.”
-          </p>
-        </div>
-        <!-- Testimonial 3 -->
-        <div
-          class="hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:flex md:w-1/3"
-        >
-          <img src="images/avatar-richard.png" class="w-16 -mt-14" alt="" />
-          <h5 class="text-lg font-bold">Richard Watts</h5>
-          <p class="text-sm text-darkGrayisBlue">
-            “Manage has supercharged our team’s workflow. The ability to
-            maintain visibility on larger milestones at all times keeps everyone
-            motivated.”
-          </p>
-        </div>
+      <div class="text-center">
+        <h3 class="text-gray-600 text-4xl font-extrabold">
+          10<span class="text-amber-600">+</span>
+        </h3>
+        <p class="text-gray-600 text-base font-bold mt-4">
+          Years of experience
+        </p>
+        <p class="text-sm text-gray-500 mt-2">
+          The level of user engagement with the application's content and
+          features.
+        </p>
       </div>
-      <!-- Button -->
-      <div class="my-16">
-        <a
-          href="#"
-          class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight"
-        >
-          Get Started
-        </a>
+      <div class="text-center">
+        <h3 class="text-gray-600 text-4xl font-extrabold">
+          99<span class="text-amber-600">%</span>
+        </h3>
+        <p class="text-gray-600 text-base font-bold mt-4">
+          Satisfied Custumers
+        </p>
+        <p class="text-sm text-gray-500 mt-2">
+          Mirrors our Focus on Client Satisfaction.
+        </p>
       </div>
     </div>
   </section>
   <!-- CTA section -->
-  <section id="cta" class="bg-brightRed">
-    <!-- Flex Container -->
-    <div
-      class="container flex flex-col items-center justify-between px-6 py-24 mx-auto space-y-12 md:py-12 md:flex-row md:space-y-0"
-    >
-      <!-- Heading -->
-      <h2
-        class="text-5xl font-bold text-center text-white md:text-4xl md:max-w-xl md:text-left"
+  <section class="py-16">
+    <div class="mx-auto mx-4 px-4 sm:px-5">
+      <div
+        class="lg:py-14 p-10 rounded-2xl bg-gradient-to-r from-amber-600 to-amber-400 flex items-center justify-between flex-col lg:flex-row"
       >
-        Simplify how your team works today
-      </h2>
-      <!-- Button -->
-      <div>
+        <div class="block text-center mb-5 lg:text-left lg:mb-0">
+          <h2
+            class="font-manrope text-4xl text-white font-semibold mb-5 lg:mb-2"
+          >
+            Contact with us
+          </h2>
+          <p class="text-xl text-indigo-100">
+            Contact us with any query or any idea.
+          </p>
+        </div>
         <a
-          href="#"
-          class="p-3 px-6 pt-2 text-brightRed bg-white rounded-full shadow-2xl baseline hover:bg-gray-900"
-        >
-          Get Started
+          href="/contact"
+          onclick="navigate(event, '/contact')"
+          class="flex items-center gap-2 bg-white rounded-md shadow-sm text-lg text-amber-600 font-semibold py-4 px-8 transition-all duration-500"
+          >Get In Touch
+          <svg
+            width="19"
+            height="14"
+            viewBox="0 0 19 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.75 7L16.4167 7M11.8333 12.5L16.6852 7.64818C16.9907 7.34263 17.1435 7.18985 17.1435 7C17.1435 6.81015 16.9907 6.65737 16.6852 6.35182L11.8333 1.5"
+              stroke="#d97706"
+              stroke-width="2.4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
         </a>
+      </div>
+    </div>
+  </section>
+  <!-- Terstimonials -->
+  <section
+    class="bg-gray-50 flex items-center justify-center py-5 mb-6 mx-8 rounded-3xl"
+  >
+    <div class="w-full max-w-6xl mx-5 px-4">
+      <div class="text-center max-w-xl mx-auto">
+        <h1 class="text-4xl md:text-5xl font-bold mb-5 text-gray-600">
+          What people <br />are saying.
+        </h1>
+        <h3 class="text-lg mb-5 font-light">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </h3>
+        <div class="text-center mb-10">
+          <span
+            class="inline-block w-1 h-1 rounded-full bg-amber-600 ml-1"
+          ></span>
+          <span
+            class="inline-block w-3 h-1 rounded-full bg-amber-600 ml-1"
+          ></span>
+          <span class="inline-block w-40 h-1 rounded-full bg-amber-600"></span>
+          <span
+            class="inline-block w-3 h-1 rounded-full bg-amber-600 ml-1"
+          ></span>
+          <span
+            class="inline-block w-1 h-1 rounded-full bg-amber-600 ml-1"
+          ></span>
+        </div>
+      </div>
+      <div class="-mx-3 md:flex items-start">
+        <div class="px-3 md:w-1/3">
+          <!-- Terstimonials 1 -->
+          <div
+            class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6"
+          >
+            <div class="w-full flex mb-4 items-center">
+              <div
+                class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200"
+              >
+                <img src="https://i.pravatar.cc/100?img=1" alt="" />
+              </div>
+              <div class="flex-grow pl-3">
+                <h6 class="font-bold text-sm uppercase text-gray-600">
+                  Kenzie Edgar.
+                </h6>
+              </div>
+            </div>
+            <div class="w-full">
+              <p class="text-sm leading-tight">
+                <span
+                  class="text-lg leading-none italic font-bold text-gray-400 mr-1"
+                  >"</span
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                sunt ratione dolor exercitationem minima quas itaque saepe quasi
+                architecto vel! Accusantium, vero sint recusandae cum tempora
+                nemo commodi soluta deleniti.<span
+                  class="text-lg leading-none italic font-bold text-gray-400 ml-1"
+                  >"</span
+                >
+              </p>
+            </div>
+          </div>
+          <!-- Terstimonials 2 -->
+          <div
+            class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6"
+          >
+            <div class="w-full flex mb-4 items-center">
+              <div
+                class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200"
+              >
+                <img src="https://i.pravatar.cc/100?img=2" alt="" />
+              </div>
+              <div class="flex-grow pl-3">
+                <h6 class="font-bold text-sm uppercase text-gray-600">
+                  Stevie Tifft.
+                </h6>
+              </div>
+            </div>
+            <div class="w-full">
+              <p class="text-sm leading-tight">
+                <span
+                  class="text-lg leading-none italic font-bold text-gray-400 mr-1"
+                  >"</span
+                >Lorem ipsum, dolor sit amet, consectetur adipisicing elit.
+                Dolore quod necessitatibus, labore sapiente, est, dignissimos
+                ullam error ipsam sint quam tempora vel.<span
+                  class="text-lg leading-none italic font-bold text-gray-400 ml-1"
+                  >"</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="px-3 md:w-1/3">
+          <div
+            class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6"
+          >
+            <!-- Terstimonials 3 -->
+            <div class="w-full flex mb-4 items-center">
+              <div
+                class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200"
+              >
+                <img src="https://i.pravatar.cc/100?img=3" alt="" />
+              </div>
+              <div class="flex-grow pl-3">
+                <h6 class="font-bold text-sm uppercase text-gray-600">
+                  Tommie Ewart.
+                </h6>
+              </div>
+            </div>
+            <div class="w-full">
+              <p class="text-sm leading-tight">
+                <span
+                  class="text-lg leading-none italic font-bold text-gray-400 mr-1"
+                  >"</span
+                >Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Vitae, obcaecati ullam excepturi dicta error deleniti
+                sequi.<span
+                  class="text-lg leading-none italic font-bold text-gray-400 ml-1"
+                  >"</span
+                >
+              </p>
+            </div>
+          </div>
+          <!-- Terstimonials 4 -->
+          <div
+            class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6"
+          >
+            <div class="w-full flex mb-4 items-center">
+              <div
+                class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200"
+              >
+                <img src="https://i.pravatar.cc/100?img=4" alt="" />
+              </div>
+              <div class="flex-grow pl-3">
+                <h6 class="font-bold text-sm uppercase text-gray-600">
+                  Charlie Howse.
+                </h6>
+              </div>
+            </div>
+            <div class="w-full">
+              <p class="text-sm leading-tight">
+                <span
+                  class="text-lg leading-none italic font-bold text-gray-400 mr-1"
+                  >"</span
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Architecto inventore voluptatum nostrum atque, corrupti, vitae
+                esse id accusamus dignissimos neque reprehenderit natus, hic
+                sequi itaque dicta nisi voluptatem! Culpa, iusto.<span
+                  class="text-lg leading-none italic font-bold text-gray-400 ml-1"
+                  >"</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="px-3 md:w-1/3">
+          <!-- Terstimonials 5 -->
+          <div
+            class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6"
+          >
+            <div class="w-full flex mb-4 items-center">
+              <div
+                class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200"
+              >
+                <img src="https://i.pravatar.cc/100?img=5" alt="" />
+              </div>
+              <div class="flex-grow pl-3">
+                <h6 class="font-bold text-sm uppercase text-gray-600">
+                  Nevada Herbertson.
+                </h6>
+              </div>
+            </div>
+            <div class="w-full">
+              <p class="text-sm leading-tight">
+                <span
+                  class="text-lg leading-none italic font-bold text-gray-400 mr-1"
+                  >"</span
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
+                voluptatem porro obcaecati dicta, quibusdam sunt ipsum,
+                laboriosam nostrum facere exercitationem pariatur deserunt
+                tempora molestiae assumenda nesciunt alias eius? Illo,
+                autem!<span
+                  class="text-lg leading-none italic font-bold text-gray-400 ml-1"
+                  >"</span
+                >
+              </p>
+            </div>
+          </div>
+          <!-- Terstimonials 6 -->
+          <div
+            class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6"
+          >
+            <div class="w-full flex mb-4 items-center">
+              <div
+                class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200"
+              >
+                <img src="https://i.pravatar.cc/100?img=6" alt="" />
+              </div>
+              <div class="flex-grow pl-3">
+                <h6 class="font-bold text-sm uppercase text-gray-600">
+                  Kris Stanton.
+                </h6>
+              </div>
+            </div>
+            <div class="w-full">
+              <p class="text-sm leading-tight">
+                <span
+                  class="text-lg leading-none italic font-bold text-gray-400 mr-1"
+                  >"</span
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatem iusto, explicabo, cupiditate quas totam!<span
+                  class="text-lg leading-none italic font-bold text-gray-400 ml-1"
+                  >"</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
