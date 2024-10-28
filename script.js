@@ -49,14 +49,13 @@ document.addEventListener("DOMContentLoaded", () => {
 // Listen for back/forward navigation
 window.onpopstate = renderContent;
 
-// Add an event listener to the Send Contact Form button
-document.getElementById("sendButton").addEventListener("click", function () {
+// Contact form
+function contact() {
   // Retrieve form values
-  console.log("puuuur");
-  var name = document.getElementById("name").value.trim();
-  var email = document.getElementById("email").value.trim();
-  var subject = document.getElementById("subject").value.trim();
-  var message = document.getElementById("message").value.trim();
+  const name = document.getElementById("nameInput").value.trim();
+  const email = document.getElementById("emailInput").value.trim();
+  const subject = document.getElementById("subjectInput").value.trim();
+  const message = document.getElementById("messageInput").value.trim();
 
   // Basic validation
   if (!name || !email || !subject || !message) {
@@ -78,10 +77,18 @@ document.getElementById("sendButton").addEventListener("click", function () {
     encodeURIComponent(subject) +
     "&body=" +
     encodeURIComponent(
-      "Name: " + name + "\n" + "Email: " + email + "\n\n" + message
+      "Hello, my name is " +
+        name +
+        "\n\n" +
+        message +
+        "\n\n" +
+        "You can contact me at: " +
+        email
     );
 
   // Open the default email client with the pre-filled email
   console.log(mailtoLink);
   window.location.href = mailtoLink;
-});
+
+  console.log(name, email, subject, message);
+}
