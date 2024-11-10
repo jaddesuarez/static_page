@@ -18,7 +18,11 @@ This project is a simple static webpage that demonstrates how to create a respon
 ├── script.js           # Main JS file
 ├── README.md           # Project documentation
 ├── assets/             # Directory for images, logos, or other assets
-│   └── logo.svg        # Example logo file used in the navigation bar
+│   ├── circle.svg      # Sample file used in the services section
+│   ├── email.svg       # Sample email file used in contact page
+│   ├── hero-img.png    # Sample img file used in hero section
+│   ├── logo.svg        # Sample logo file used in the navigation bar
+│   └── phone.svg       # Sample phone file used in contact page
 ├── components/         # Directory for app components
 │   ├── footer.html     # Footer component
 │   └── navbar.svg      # Navbar component
